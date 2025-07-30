@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Wheel Two</title>
+    <style>
+        #flex-container {
+            display: grid;
+            place-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        #center {
+            text-align: center;
+            border-radius:50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: .5vw solid #0C5449;
+            height:50vw;
+            width:50vw;
+            margin-top: 8vw;
+        
+        }
+            /* #smaller-wheel {
+            text-align: center;
+            border-radius:50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: .5vw solid #0C5449;
+            background-color: #0C5449;
+            height:50%;
+            width:50%;
+            color: goldenrod;
+        } */
+
+       #center > h1 {
+            font-size: 2.7vw;
+            position: absolute;
+            color: yellow;
+            z-index: 2;
+            top:26vw;
+
+        }
+
+        .center-half-circle-one  {
+            font-size: 1.2vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline center;
+            font-size: 2vw;
+            color: #0C5449;
+            width: 25vw;
+            height: 12.5vw;
+            background-color: azure;
+            border: .25vw solid #0C5449;
+            border-radius:  0 0 12.5vw 12.5vw;
+            position: absolute;
+            top:34vw;
+            z-index:1;
+        }
+
+        .center-half-circle-one > i {
+            margin-top: 1vw;
+            font-size: 2.5vw;
+
+        }
+         .center-half-circle-two  {
+            font-size: 1.2vw;
+            text-align: center;
+            display: grid;
+            justify-content: center;
+            color: azure;
+            width: 25vw;
+            height: 12.5vw;
+            background-color: #0C5449;
+            border: .25vw solid #0C5449;
+            border-radius: 12.5vw 12.5vw  0 0;
+            position: absolute;
+            top:22vw;
+            z-index:1;
+        }
+        
+        
+           .outer-wheels {
+             
+            border-radius:50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: .5vw solid #0C5449;
+            height:18vw;
+            width:18vw;
+            margin-left: 20vw;
+            position: absolute;
+            background-color: azure;
+            color: #0C5449;
+            font-size: 1.7vw;
+            text-align: center;
+            transition: .5s background-color;
+        
+        }
+
+      .outer-wheels > p {
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        font-size: 1.5vw;
+      }
+      .outer-wheels > h1 {
+        font-size: 1.7vw;
+       
+      }
+        .outer-wheels:hover {
+            background-color: gold;
+            font-weight: bold;
+        }
+          #top-left-wheel {
+          
+            left: 1vw;
+            top: 5vw;
+            display: flex;
+            flex-direction: column;
+           
+           
+
+        }
+
+        #top-wheel {
+            left:21vw;
+            top:1vw;
+             display: flex;
+            flex-direction: column;
+        }
+
+       #top-right-wheel {
+       right: 20vw;
+        top: 5vw;
+        display: flex;
+            flex-direction: column;
+       
+       }
+
+       #right-wheel {
+            top:23vw;
+            right:12vw;
+            display: flex;
+            flex-direction: column;
+       }
+
+       #bot-right-wheel {
+        right:20vw;
+        top:43vw;
+        display: flex;
+            flex-direction: column;
+       }
+     #bottom-wheel {
+        top:50vw;
+        left:21vw;
+        display: flex;
+            flex-direction: column;
+     }
+
+     #bot-left-wheel {
+        left:1vw;
+       top:43vw;
+       display: flex;
+            flex-direction: column;
+     }
+
+     #left-wheel {
+        top:23vw;
+        right:70vw;
+        display: flex;
+            flex-direction: column;
+     }
+
+     #left-bubbles {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right:90vw;
+        top:17vw;
+     }
+       #right-bubbles {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right:2.5vw;
+        top:17vw;
+        z-index: 0;
+     }
+
+   
+     .bubble {
+        border-radius:50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: .5vw solid #0C5449;
+            height:7vw;
+            width:7vw;
+            background-color: azure;
+            color: #0C5449;
+            font-size: 1.7vw;
+            text-align: center;
+            transition: .5s background-color;
+     }
+
+     .bubble:hover {
+        background-color: gold;
+        font-weight: bold;
+     }
+
+     a {
+        text-decoration: none;
+     }
+    </style>
+</head>
+<body>
+    <div id ="flex-container">
+    <div id="center">
+        <h1>Clinical Research<br>Service Center</h1>
+        <!-- <div id="smaller-wheel"></div> -->
+        <div class="center-half-circle-one"><i>"My head hurts" </i><br><p>- Mallory Lund</p></div>
+        <div class="center-half-circle-two"> </div>
+        
+    </div>
+    <a href="https://clinicalresearch.med.wayne.edu/schedule-room"><div id="top-left-wheel" class="outer-wheels"><h1>Clinicial<br> Research Centers<br>iBio and Mott</h1><img src="./heart_scope.png" style="width: 10vw;height: 5vw;"><p>Reserve a Room</p></div></a>
+    <a href="https://clinicalresearch.med.wayne.edu/crc-services"><div id="top-wheel" class="outer-wheels"><h1>Core Services <br>and<br> Pricing</h1><img src="./checklist.png" style="width: 10vw;height: 6vw;"></div></a>
+    <a href="https://www.med.wayne.edu/news"><div id="top-right-wheel" class="outer-wheels"><h1>Current<br>Clinical Research</h1><img src="./magnifying_glass.png" style="width: 10vw;height: 6vw;"></div></a>
+    <a href="https://clinicalresearch.med.wayne.edu/registries"><div id="right-wheel" class="outer-wheels"><h1>Database Creation</h1><img src="./database.png" style="width: 10vw;height: 6.5vw;"></div></a>
+    <a href= ""><div id="bot-right-wheel" class="outer-wheels"><h1>Research <br>Laboratory</h1><img src="./flask.png" style="width: 10vw;height: 6vw;"><p>BioMarkers and<br> Assays</p></div></a>
+    <a href= "https://clinicalresearch.med.wayne.edu/biobanking"><div id="bottom-wheel" class="outer-wheels"><h1>WSU <br>BioBank Specimen</h1><img src="./bio_freezer.png" style="width: 10vw;height: 6.5vw;"><p>View availability</p></div></a>
+    <a href= "https://clinicalresearch.med.wayne.edu/community-outreach"><div id="bot-left-wheel" class="outer-wheels"><h1>ResearchMatch Recruitment</h1><img src="./people.png" style="width: 10vw;height: 5.5vw;"><p>Community<br> Outreach</p></div></a>
+    <a href= "https://clinicalresearch.med.wayne.edu/oncore"><div id="left-wheel" class="outer-wheels"><h1>Clinicial Research Management</h1><img src="./computer.png" style="width: 10vw;height: 6.5vw;"></div></a>
+    <div id="left-bubbles">
+        <a href ="https://clinicalresearch.med.wayne.edu/oncore"><div class="bubble">OnCore</div></a>
+        <a href = "https://clinicalresearch.med.wayne.edu/budget-contract"><div class="bubble">EReg</div></a>
+        <a href = "https://clinicalresearch.med.wayne.edu/epi-biostat"><div class="bubble">Analytics</div></a>
+        <a href = "https://clinicalresearch.med.wayne.edu/epi-biostat"><div class="bubble">BioStats</div></a>
+    </div>
+     <hr style="width: 13vw;position: absolute;top:23vw;left:7vw; border-top: .5vw solid#00584d;z-index: -1;-webkit-transform: rotate(30deg);">
+    <hr style="width: 13vw;position: absolute;top:28vw;left:7vw; border-top: .5vw solid#00584d;z-index: -1;-webkit-transform: rotate(180deg);">
+    <hr style="height:13vw; position: absolute; top:30vw;left:10.5vw; border-left: .5vw solid#00584d;z-index: -1;border-right: .1vw solid #00584d; -webkit-transform: rotate(90deg);">
+    <hr style="height:13vw; position: absolute; top:35vw;left:10vw; border-left: .5vw solid#00584d;z-index: -1;border-right: .1vw solid #00584d; -webkit-transform: rotate(44deg);">
+     <div id="right-bubbles">
+        <a href= "https://redcap.link/CRSC_Database_Services_Request"><div class="bubble">REDCap</div></a>
+        <a href="https://wsu-edc-prod.forteresearchapps.com/forte-platform-web/login"><div class="bubble">EDC</div></a>
+        <a href=""><div class="bubble">GCP</div></a>
+        <a href=""><div class="bubble">Surveys</div></a>
+    </div>
+    <hr style="width: 13vw;position: absolute;top:28.5vw;right:4vw; border-top: .5vw solid#00584d;z-index: -2; -webkit-transform: rotate(180deg);">
+    <hr style="width: 13vw;position: absolute;top:36.5vw;right:4vw; border-top: .5vw solid#00584d;z-index: -2; -webkit-transform: rotate(180deg);">
+    <hr style="height:13vw; position: absolute; top:20vw;right:12vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(40.5deg);">
+    <hr style="height:13vw; position: absolute; top:34vw;right:12vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(-50.5deg);">
+    </div>
+</body>
+</html>
