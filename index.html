@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <title>Wheel Four</title>
     <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
         #flex-container {
             display: grid;
             place-content: center;
@@ -216,49 +219,110 @@
      a {
         text-decoration: none;
      }
+     .bubble_lower {
+        border-radius:50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: .5vw solid #0C5449;
+            height:8vw;
+            width:8vw;
+            background-color: azure;
+            color: #0C5449;
+            font-size: 1.7vw;
+            text-align: center;
+            transition: .5s background-color;
+            /* margin-right: .5vw; */
+            margin-left: 3vw;
+            margin-top: 25vw;
+            
+     }
+     #lower_bubbles_left {
+        display: flex;
+        flex-direction: row;
+         left:19.5vw;
+        /* top:61.5vw;  */
+        z-index: 0;
+        align-content: space-between;
+        -webkit-transform: rotate(40.5deg);
+     }
+     #lower_bubbles_right {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right:12vw;
+        top:40.5vw;
+        z-index: 0;
+        -webkit-transform: rotate(-40.5deg);
+     }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id ="flex-container">
-    <div id="center">
-        <h1>Core Services,<br> Grant Resources<br> and Pricing</h1>
-        <!-- <div id="smaller-wheel"></div> -->
-        <div class="center-half-circle-one"><p style="font-size:2.7vw;margin-top: .5vw;"><i>We</i></i> SUPPORT<br> <span style="font-weight: bold;"><i>Your</i> RESEARCH</span></p></div>
-        <div class="center-half-circle-two"> </div>
+    <main>
         
-    </div>
-    <a href="https://clinicalresearch.med.wayne.edu/schedule-room"><div id="top-left-wheel" class="outer-wheels"><h1>Recruitment</h1><img src="./people.png" style="width: 10vw;height: 5.5vw;"><p>ResearchMatch<br>Community<br> Outreach</p></div></a>
-    <a href="https://clinicalresearch.med.wayne.edu/crc-services"><div id="top-wheel" class="outer-wheels"><h1>Clinicial<br> Research Centers<br>iBio and Mott</h1><img src="./heart_scope.png" style="width: 10vw;height: 5vw;"><p>Reserve a Room</p></div></a>
-    <a href="https://www.med.wayne.edu/news"><div id="top-right-wheel" class="outer-wheels"><h1>Phoenix<br>Professional Services</h1><img src="./Phoenix_Brandmark_Icon_GREEN.png" style="width: 7vw;height: 6vw;"></div></a>
-    <a href="https://clinicalresearch.med.wayne.edu/registries"><div id="right-wheel" class="outer-wheels"><h1>Database Creation</h1><img src="./database.png" style="width: 10vw;height: 6.5vw;"></div></a>
-    <a href= ""><div id="bot-right-wheel" class="outer-wheels"><h1>Research <br>Laboratory</h1><img src="./flask.png" style="width: 10vw;height: 6vw;"><p>BioMarkers and<br> Assays</p></div></a>
-    <a href= "https://clinicalresearch.med.wayne.edu/biobanking"><div id="bottom-wheel" class="outer-wheels"><h1>WSU <br>BioBank Specimen</h1><img src="./bio_freezer.png" style="width: 10vw;height: 6.5vw;"><p>View availability</p></div></a>
-    <a href= "https://clinicalresearch.med.wayne.edu/community-outreach"><div id="bot-left-wheel" class="outer-wheels"><h1>BioStatistic Analysis</h1><img src="./health_econ.png" style="width: 8vw;height: 5.5vw;"><p>Health Economics</p></div></a>
-    <a href= "https://clinicalresearch.med.wayne.edu/oncore"><div id="left-wheel" class="outer-wheels"><h1>Clinicial Research Management</h1><img src="./computer.png" style="width: 10vw;height: 6.5vw;"></div></a>
-    <div id="left-bubbles">
-        <a href ="https://clinicalresearch.med.wayne.edu/oncore"><div class="bubble">OnCore</div></a>
-        <a href = "https://clinicalresearch.med.wayne.edu/budget-contract"><div class="bubble">EReg</div></a>
-        <!-- <a href = "https://clinicalresearch.med.wayne.edu/epi-biostat"><div class="bubble">Analytics</div></a> -->
-        <a href = "https://clinicalresearch.med.wayne.edu/epi-biostat"><div class="bubble">Analytics</div></a>
-    </div>
-     <hr style="width: 13vw;position: absolute;top:28vw;left:7vw; border-top: .5vw solid#00584d;z-index: -1;-webkit-transform: rotate(30deg);">
-    <hr style="width: 13vw;position: absolute;top:31vw;left:7vw; border-top: .5vw solid#00584d;z-index: -1;-webkit-transform: rotate(180deg);">
-    <!-- <hr style="height:13vw; position: absolute; top:30vw;left:10.5vw; border-left: .5vw solid#00584d;z-index: -1;border-right: .1vw solid #00584d; -webkit-transform: rotate(90deg);"> -->
-    <hr style="height:13vw; position: absolute; top:29vw;left:10vw; border-left: .5vw solid#00584d;z-index: -1;border-right: .1vw solid #00584d; -webkit-transform: rotate(44deg);">
-     <div id="right-bubbles">
-        <a href= "https://redcap.link/CRSC_Database_Services_Request"><div class="bubble">REDCap</div></a>
-        <a href="https://wsu-edc-prod.forteresearchapps.com/forte-platform-web/login"><div class="bubble">EDC</div></a>
-        <a href=""><div class="bubble">GCP</div></a>
-        <!-- <a href=""><div class="bubble">Surveys</div></a> -->
-    </div>
-    <!-- <hr style="width: 13vw;position: absolute;top:28.5vw;right:4vw; border-top: .5vw solid#00584d;z-index: -2; -webkit-transform: rotate(180deg);"> -->
-    <hr style="width: 13vw;position: absolute;top:31.5vw;right:4vw; border-top: .5vw solid#00584d;z-index: -2; -webkit-transform: rotate(180deg);">
-    <hr style="height:13vw; position: absolute; top:21vw;right:12vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(40.5deg);">
-    <hr style="height:13vw; position: absolute; top:30vw;right:12vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(-50.5deg);">
-    </div>
+        <div id ="flex-container">
+        <div id="center">
+            <h1>View Pricing<br> and <br>Services</h1>
+            <!-- <div id="smaller-wheel"></div> -->
+            <div class="center-half-circle-one"><p style="font-size:2.7vw;margin-top: .5vw;"><i>We</i></i> SUPPORT<br> <span style="font-weight: bold;"><i>Your</i> RESEARCH</span></p></div>
+            <div class="center-half-circle-two"> </div>
+        
+        </div>
+        <a href="https://clinicalresearch.med.wayne.edu/schedule-room"><div id="top-left-wheel" class="outer-wheels"><h1>Research <br>Laboratory</h1><img src="./flask.png" style="width: 10vw;height: 6vw;" alt="a graphic representation of a flask"><p>BioMarkers &<br> Assays</p></div></a>
+        <a href="https://clinicalresearch.med.wayne.edu/crc-services"><div id="top-wheel" class="outer-wheels"><h1>Clinicial<br> Research Centers<br>iBio and Mott</h1><img src="./heart_scope.png" style="width: 10vw;height: 5vw;" alt="graphic depicting a heart and a stethoscope"><p>Reserve a Room</p></div></a>
+        <a href="https://www.med.wayne.edu/news"><div id="top-right-wheel" class="outer-wheels"><h1>Grant Resources</h1><img src="./grant.png" style="width: 10vw;height: 10vw;" alt="graphic depicting a heart and a stethoscope"></div></a>
+        <a href="https://clinicalresearch.med.wayne.edu/registries"><div id="right-wheel" class="outer-wheels"><h1>Database Creation</h1><img src="./database.png" style="width: 10vw;height: 6.5vw;" alt="a grphic representation of a computer database"></div></a>
+        <a href= ""><div id="bot-right-wheel" class="outer-wheels"><h1>DMAC<br>(Data Management Analytics Cloud)</h1><img src="./data.png" style="width: 8vw;height: 5.5vw;" alt="a graphic depicting a economics graph and a dollar sign"></div></a>
+        <a href= "https://clinicalresearch.med.wayne.edu/biobanking"><div id="bottom-wheel" class="outer-wheels"><h1>WSU <br>BioBank Specimen</h1><img src="./bio_freezer.png" style="width: 10vw;height: 6.5vw;" alt="a graphic representation of a biofreezer"><p>View availability</p></div></a>
+        <a href= "https://clinicalresearch.med.wayne.edu/community-outreach"><div id="bot-left-wheel" class="outer-wheels"><h1>Recruitment</h1><img src="./people.png" style="width: 10vw;height: 6vw;" alt="a graphic representation of a flask"></div></a>
+        <a href= "https://clinicalresearch.med.wayne.edu/oncore"><div id="left-wheel" class="outer-wheels"><h1>Clinicial Research Management</h1><img src="./computer.png" style="width: 10vw;height: 6.5vw;" alt="a graphic depiction of a computer monitor"></div></a>
+        <div id="left-bubbles">
+            <a href ="https://clinicalresearch.med.wayne.edu/oncore"><div class="bubble">OnCore</div></a>
+            <a href = "https://clinicalresearch.med.wayne.edu/budget-contract"><div class="bubble">EReg</div></a>
+            <!-- <a href = "https://clinicalresearch.med.wayne.edu/epi-biostat"><div class="bubble">Analytics</div></a> -->
+            <a href = "https://clinicalresearch.med.wayne.edu/epi-biostat"><div class="bubble">Analytics</div></a>
+        </div>
+         <hr style="width: 13vw;position: absolute;top:28vw;left:7vw; border-top: .5vw solid#00584d;z-index: -1;-webkit-transform: rotate(30deg);">
+        <hr style="width: 13vw;position: absolute;top:31vw;left:7vw; border-top: .5vw solid#00584d;z-index: -1;-webkit-transform: rotate(180deg);">
+        <!-- <hr style="height:13vw; position: absolute; top:30vw;left:10.5vw; border-left: .5vw solid#00584d;z-index: -1;border-right: .1vw solid #00584d; -webkit-transform: rotate(90deg);"> -->
+        <hr style="height:13vw; position: absolute; top:29vw;left:10vw; border-left: .5vw solid#00584d;z-index: -1;border-right: .1vw solid #00584d; -webkit-transform: rotate(44deg);">
+         <div id="right-bubbles">
+            <a href= "https://redcap.link/CRSC_Database_Services_Request"><div class="bubble">REDCap</div></a>
+            <a href="https://wsu-edc-prod.forteresearchapps.com/forte-platform-web/login"><div class="bubble">EDC</div></a>
+            <a href=""><div class="bubble">GCP</div></a>
+            <!-- <a href=""><div class="bubble">Surveys</div></a> -->
+        </div>
+        <!-- <hr style="width: 13vw;position: absolute;top:28.5vw;right:4vw; border-top: .5vw solid#00584d;z-index: -2; -webkit-transform: rotate(180deg);"> -->
+        <hr style="width: 13vw;position: absolute;top:31.5vw;right:4vw; border-top: .5vw solid#00584d;z-index: -2; -webkit-transform: rotate(180deg);">
+        <hr style="height:13vw; position: absolute; top:21vw;right:12vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(40.5deg);">
+        <hr style="height:13vw; position: absolute; top:30vw;right:12vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(-50.5deg);">
+        </div>
+        <div id="lower_bubbles_left" style="margin-left: 3vw;">
+            <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(-40.5deg);">Research<br>Match</p></div>
+             <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(-40.5deg);">Community<br>Outreach</p></div>
+             <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(-40.5deg);">Mobile <br>Health <br>Unit</p></div>
+        </div>
+        <div>
+            <hr style="width: 13vw;position: absolute; top:56vw;left:12vw; border-top: .5vw solid#00584d;z-index: -2; -webkit-transform: rotate(-20.5deg);">
+        <hr style="height:13vw; position: absolute; top:54vw;left:25vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(45.5deg);">
+        <hr style="height:13vw; position: absolute; top:60vw;left:30.5vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; ">
+        </div>
+        <div id="lower_bubbles_right">
+            <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(40.5deg);">Biostats</p></div>
+             <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(40.5deg);" >Health Economics</p></div>
+             <div class="bubble_lower"><p style="font-size: 1.4vw;bottom: 5vw;-webkit-transform: rotate(40.5deg);">Phoenix Services </p></div>
+        </div>
+        <div>
+            <hr style="width: 13vw;position: absolute; top:57vw;right:9vw; border-top: .5vw solid#00584d;z-index: -2; -webkit-transform: rotate(30.5deg);">
+        <hr style="height:13vw; position: absolute; top:51vw;right:26vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(-40.5deg);">
+        <hr style="height:13vw; position: absolute; top:61vw;right:29.5vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; ">
+        </div>
+    </main>
 </body>
 </html>
-
 
 
 
