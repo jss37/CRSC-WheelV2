@@ -234,14 +234,22 @@
             transition: .5s background-color;
             /* margin-right: .5vw; */
             margin-left: 3vw;
-            margin-top: 25vw;
+            top: 35vw;
+            left:0;
             
      }
+         .bubble_lower:hover {
+     background-color: gold;
+        font-weight: bold;
+     }
+            
+     
      #lower_bubbles_left {
         display: flex;
         flex-direction: row;
-         left:19.5vw;
-        /* top:61.5vw;  */
+        position: absolute;
+         left:.5vw;
+        top:60.5vw; 
         z-index: 0;
         align-content: space-between;
         -webkit-transform: rotate(40.5deg);
@@ -250,8 +258,8 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        right:12vw;
-        top:40.5vw;
+        right:4vw;
+        top:62.5vw;
         z-index: 0;
         -webkit-transform: rotate(-40.5deg);
      }
@@ -275,7 +283,7 @@
         <a href="https://clinicalresearch.med.wayne.edu/crc-services"><div id="top-wheel" class="outer-wheels"><h1>Clinicial<br> Research Centers<br>iBio and Mott</h1><img src="./heart_scope.png" style="width: 10vw;height: 5vw;" alt="graphic depicting a heart and a stethoscope"><p>Reserve a Room</p></div></a>
         <a href="https://www.med.wayne.edu/news"><div id="top-right-wheel" class="outer-wheels"><h1>Grant Resources</h1><img src="./grant.png" style="width: 10vw;height: 10vw;" alt="graphic depicting a heart and a stethoscope"></div></a>
         <a href="https://clinicalresearch.med.wayne.edu/registries"><div id="right-wheel" class="outer-wheels"><h1>Database Creation</h1><img src="./database.png" style="width: 10vw;height: 6.5vw;" alt="a grphic representation of a computer database"></div></a>
-        <a href= ""><div id="bot-right-wheel" class="outer-wheels"><h1>DMAC<br>(Data Management Analytics Cloud)</h1><img src="./data.png" style="width: 8vw;height: 5.5vw;" alt="a graphic depicting a economics graph and a dollar sign"></div></a>
+        <a href= "https://clinicalresearch.med.wayne.edu/biobanking"><div id="bot-right-wheel" class="outer-wheels"><h1>DMAC<br>(Data Management Analytics Cloud)</h1><img src="./data.png" style="width: 8vw;height: 5.5vw;" alt="a graphic depicting a economics graph and a dollar sign"></div></a>
         <a href= "https://clinicalresearch.med.wayne.edu/biobanking"><div id="bottom-wheel" class="outer-wheels"><h1>WSU <br>BioBank Specimen</h1><img src="./bio_freezer.png" style="width: 10vw;height: 6.5vw;" alt="a graphic representation of a biofreezer"><p>View availability</p></div></a>
         <a href= "https://clinicalresearch.med.wayne.edu/community-outreach"><div id="bot-left-wheel" class="outer-wheels"><h1>Recruitment</h1><img src="./people.png" style="width: 10vw;height: 6vw;" alt="a graphic representation of a flask"></div></a>
         <a href= "https://clinicalresearch.med.wayne.edu/oncore"><div id="left-wheel" class="outer-wheels"><h1>Clinicial Research Management</h1><img src="./computer.png" style="width: 10vw;height: 6.5vw;" alt="a graphic depiction of a computer monitor"></div></a>
@@ -301,7 +309,9 @@
         <hr style="height:13vw; position: absolute; top:30vw;right:12vw; border-left: .5vw solid#00584d;z-index: -2;border-right: .1vw solid #00584d; -webkit-transform: rotate(-50.5deg);">
         </div>
         <div id="lower_bubbles_left" style="margin-left: 3vw;">
-            <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(-40.5deg);">Research<br>Match</p></div>
+            <a href="https://redcap.link/CRSC_Database_Services_Request">
+                <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(-40.5deg);">Research<br>Match</p></div>
+            </a>
              <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(-40.5deg);">Community<br>Outreach</p></div>
              <div class="bubble_lower"><p style="font-size: 1.4vw;-webkit-transform: rotate(-40.5deg);">Mobile <br>Health <br>Unit</p></div>
         </div>
